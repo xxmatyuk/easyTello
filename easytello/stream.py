@@ -18,7 +18,7 @@ def run_ffmpeg(tello_ip):
         '-bf', '0',
         '-',                        # output to go to stdout
     ]
-    return subprocess.Popen(ffmpg_cmd, stdout = subprocess.PIPE, bufsize=10**8)
+    return subprocess.Popen(ffmpg_cmd, stdout=subprocess.PIPE, bufsize=10**8)
 
 def run_stream(process):
     while True:
